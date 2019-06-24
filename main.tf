@@ -45,7 +45,7 @@ locals {
 }
 
 module "nat-gateway" {
-  source                = "dcaba/terraform-google-managed-instance-group"
+  source                = "github.com/dcaba/terraform-google-managed-instance-group"
   module_enabled        = "${var.module_enabled}"
   project               = "${var.project}"
   region                = "${var.region}"
